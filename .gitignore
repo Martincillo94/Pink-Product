@@ -1,0 +1,5 @@
+#elementos ignorados
+
+*.scss
+*./scss
+
