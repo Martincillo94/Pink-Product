@@ -24,10 +24,11 @@
                 </picture>
             </a>
             <div class="navbar">
-                <a href="#">Inicio</a>
-                <a href="#pink">Que es Pink</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#contacto">Contacto</a>
+                <a class="volver-arriba" href="#">Inicio</a>
+                <a class="scroll-suave" href="#pink">Que es Pink</a>
+                <a class="scroll-suave" href="#ventajas">Ventajas</a>
+                <a class="scroll-suave" href="#galeria">Galeria</a>
+                <a class="scroll-suave" href="#contacto">Contacto</a>
             </div>
             <div class="redes-top">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -43,22 +44,25 @@
                     <img src="./imgs/logoMMH1.png" alt="logotipo MMH">
                 </picture>
             </a>
-            <div class="menu-slide">
+            <div id='menu_slide' class="menu-slide">
                 <div class="redes-top">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="navbar">
-                    <a href="#">Inicio</a>
-                    <a href="#pink">Que es Pink</a>
-                    <a href="#galeria">Galeria</a>
-                    <a href="#contacto">Contacto</a>
+                    <a class="volver-arriba" href="#">Inicio</a>
+                    <a class="scroll-suave" href="#pink">Que es Pink</a>
+                    <a class="scroll-suave" href="#ventajas">Ventajas</a>
+                    <a class="scroll-suave" href="#galeria">Galeria</a>
+                    <a class="scroll-suave" href="#contacto">Contacto</a>
                 </div>
             </div>
             
+            <div id="btn_b">
+                <i id="btn-burguer" class="burguer fa-solid fa-bars"></i>
+            </div>
             
-            <i id="btn-burguer" class="burguer fa-solid fa-bars"></i>
         </div>
         
     </header><!-- fin header -->
@@ -150,7 +154,7 @@
         </section><!-- fin ingredientes -->
 
         <!-- mejoras -->
-        <section class="mejoras">
+        <section class="mejoras" id="ventajas">
 
             <div class="overlay"></div>
 
@@ -227,7 +231,7 @@
         <!-- Slider galeria -->
         <section class="galeria" id="galeria">
             <div class="col-izq">
-                <div class="slider">
+                <div class="slider" id="slider">
                     <div class="slide foto1"></div>
                     <div class="slide foto2"></div>
                     <div class="slide foto3"></div>
@@ -263,185 +267,186 @@
 
             <div class="container-articles">
 
-                <div class="article">
-                    <div class="section-title">
-                        <div class="avatar avatar1">
-                            
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Laura Bolivar</h3>
-                            <address class="post-date">25 años, México México, 2022</address>
-                        </div> 
+                <div id="carrusel" class="carousel-items">
+                    <div class="article">
+                        <div class="section-title">
+                            <div class="avatar avatar1">
+                                
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Laura Bolivar</h3>
+                                <address class="post-date">25 años, México México, 2022</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>He estado tomando los Productos Pink y sus derivados y realmenteme han ayudado a mejorar mi salud, asi como a sentirme con mucho mas energia</cite>
+                        </div>
                     </div>
-                    <div class="texto">
-                        <cite><span>"</span>He estado tomando los Productos Pink y sus derivados y realmenteme han ayudado a mejorar mi salud, asi como a sentirme con mucho mas energia</cite>
+    
+                    <div class="article even">
+                        <div class="section-title">
+                            <div class="avatar avatar2">
+                                <!-- <img src="./imgs/a2.jpg" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Jesus Alcantara</h3>
+                                <address class="post-date">29 años, México México, 2022</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>En lo personal yo tomé el blue acompañado de una comida balanceada y vi increíbles cambios.</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article">
+                        <div class="section-title">
+                            <div class="avatar avatar3">
+                                <!-- <img src="./imgs/a5.jpg" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Marcela Pacheco</h3>
+                                <address class="post-date">26 años, Bogotá, Colombia, 2022</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Vivo en Bogotá, yo lo estoy tomando me encanta!!!!!!</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article even">
+                        <div class="section-title">
+                            <div class="avatar avatar4">
+                                <!-- <img src="./imgs/avatar4.jpg" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Frida ledezma</h3>
+                                <address class="post-date">30 años, NY EE.UU, 2022</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Buenisimo yo lo empece a tomar es buenisimo baje 5 kg en un mes conbinando con un poco de caminata obseve que sudaba mas.</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article">
+                        <div class="section-title">
+                            <div class="avatar avatar5">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Mary Limon</h3>
+                                <address class="post-date">24 años, México México, 2022</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Yo pesaba 200 kilos y baje 120 kilos en una semana, buenisimo, a mi prima le salieron bubis y nalgas en 4 días</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article even">
+                        <div class="section-title">
+                            <div class="avatar avatar6">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Nayely Lopez</h3>
+                                <address class="post-date">31 años, México México, 2021</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Yo lo tomé un mes, y me ayudó a bajar súper rápido, obviamente yo sí hacía ejercicio de pesas intenso, y cuidaba un poco lo que comía.</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article ">
+                        <div class="section-title">
+                            <div class="avatar avatar7">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Eliza Bravo</h3>
+                                <address class="post-date">24 años, México México, 2021</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Wow buen trabajo! Se notan los cambios!</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article even">
+                        <div class="section-title">
+                            <div class="avatar avatar8">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Marty Velazquez</h3>
+                                <address class="post-date">29 años, México México, 2021</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Wow si se notó el cambio, tal vez en peso no, pero en talla si</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article">
+                        <div class="section-title">
+                            <div class="avatar avatar9">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Andy Compean</h3>
+                                <address class="post-date">33 años, México México, 2021</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>He estado tomando los Productos Pink y sus derivados y realmenteme han ayudado a mejorar mi salud, asi como a sentirme con mucho mas energia</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article even">
+                        <div class="section-title">
+                            <div class="avatar avatar10">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Renata Cruz</h3>
+                                <address class="post-date">30 años, México México, 2021</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Pues  la verdad  para un mes si  es muy  notorio  y solo  es el primer  mes  apenas  empieza hacer  su funcion  imaginese  al tercer  mes  yo lo  estoy  tomando  y me siento  muy  bien</cite>
+                        </div>
+                    </div>
+    
+                    <div class="article">
+                        <div class="section-title">
+                            <div class="avatar avatar11">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Jesus Villeda</h3>
+                                <address class="post-date">25 años, México México, 2020</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Mi hermana le calló muy bién el producto, está súper delgada y bajo rápido, pero yo soy más grande de edad, haber cómo me va</cite>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="section-title">
+                            <div class="avatar avatar12">
+                                <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
+                            </div>                    
+                            <div class="subtitle">
+                                <h3>Julio Quintero</h3>
+                                <address class="post-date">22 años, México México, 2020</address>
+                            </div> 
+                        </div>
+                        <div class="texto">
+                            <cite><span>"</span>Me gusta el resultado se ve la diferencia</cite>
+                        </div>
                     </div>
                 </div>
-
-                <div class="article even">
-                    <div class="section-title">
-                        <div class="avatar avatar2">
-                            <!-- <img src="./imgs/a2.jpg" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Jesus Alcantara</h3>
-                            <address class="post-date">29 años, México México, 2022</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>En lo personal yo tomé el blue acompañado de una comida balanceada y vi increíbles cambios.</cite>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="section-title">
-                        <div class="avatar avatar3">
-                            <!-- <img src="./imgs/a5.jpg" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Marcela Pacheco</h3>
-                            <address class="post-date">26 años, Bogotá, Colombia, 2022</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Vivo en Bogotá, yo lo estoy tomando me encanta!!!!!!</cite>
-                    </div>
-                </div>
-
-                <div class="article even">
-                    <div class="section-title">
-                        <div class="avatar avatar4">
-                            <!-- <img src="./imgs/avatar4.jpg" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Frida ledezma</h3>
-                            <address class="post-date">30 años, NY EE.UU, 2022</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Buenisimo yo lo empece a tomar es buenisimo baje 5 kg en un mes conbinando con un poco de caminata obseve que sudaba mas.</cite>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="section-title">
-                        <div class="avatar avatar5">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Mary Limon</h3>
-                            <address class="post-date">24 años, México México, 2022</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Yo pesaba 200 kilos y baje 120 kilos en una semana, buenisimo, a mi prima le salieron bubis y nalgas en 4 días</cite>
-                    </div>
-                </div>
-
-                <div class="article even">
-                    <div class="section-title">
-                        <div class="avatar avatar6">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Nayely Lopez</h3>
-                            <address class="post-date">31 años, México México, 2021</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Yo lo tomé un mes, y me ayudó a bajar súper rápido, obviamente yo sí hacía ejercicio de pesas intenso, y cuidaba un poco lo que comía.</cite>
-                    </div>
-                </div>
-
-                <div class="article ">
-                    <div class="section-title">
-                        <div class="avatar avatar7">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Eliza Bravo</h3>
-                            <address class="post-date">24 años, México México, 2021</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Wow buen trabajo! Se notan los cambios!</cite>
-                    </div>
-                </div>
-
-                <div class="article even">
-                    <div class="section-title">
-                        <div class="avatar avatar8">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Marty Velazquez</h3>
-                            <address class="post-date">29 años, México México, 2021</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Wow si se notó el cambio, tal vez en peso no, pero en talla si</cite>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="section-title">
-                        <div class="avatar avatar9">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Andy Compean</h3>
-                            <address class="post-date">33 años, México México, 2021</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>He estado tomando los Productos Pink y sus derivados y realmenteme han ayudado a mejorar mi salud, asi como a sentirme con mucho mas energia</cite>
-                    </div>
-                </div>
-
-                <div class="article even">
-                    <div class="section-title">
-                        <div class="avatar avatar10">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Renata Cruz</h3>
-                            <address class="post-date">30 años, México México, 2021</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Pues  la verdad  para un mes si  es muy  notorio  y solo  es el primer  mes  apenas  empieza hacer  su funcion  imaginese  al tercer  mes  yo lo  estoy  tomando  y me siento  muy  bien</cite>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div class="section-title">
-                        <div class="avatar avatar11">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Jesus Villeda</h3>
-                            <address class="post-date">25 años, México México, 2020</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Mi hermana le calló muy bién el producto, está súper delgada y bajo rápido, pero yo soy más grande de edad, haber cómo me va</cite>
-                    </div>
-                </div>
-                <div class="article">
-                    <div class="section-title">
-                        <div class="avatar avatar12">
-                            <!-- <img src="./imgs/avatar1.PNG" alt="avatar foto1"> -->
-                        </div>                    
-                        <div class="subtitle">
-                            <h3>Julio Quintero</h3>
-                            <address class="post-date">22 años, México México, 2020</address>
-                        </div> 
-                    </div>
-                    <div class="texto">
-                        <cite><span>"</span>Me gusta el resultado se ve la diferencia</cite>
-                    </div>
-                </div>
-                
             </div><!-- fin container-articles -->
         </section><!-- fin testimonios -->
 
@@ -479,7 +484,10 @@
     </footer><!-- fin footer -->
 
 
-
+<script src="./js/scroll-suave.js"></script>
+<script src="./js/carrusel.js"></script>
+<script src="./js/sliderGalery.js"></script>
+<script src="./js/navbar_slide.js"></script>
 <script src="./js/font_awesome.min.js"></script>
 </body>
 
