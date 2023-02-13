@@ -673,6 +673,12 @@ main .contacto .container-formulario .formulario .inputgroup input:not([type=sub
   border: none;
   border-bottom: 1px solid rgb(235, 235, 235);
 }
+main .contacto .container-formulario .formulario .inputgroup textarea:focus::placeholder,
+main .contacto .container-formulario .formulario .inputgroup input:not([type=submit]):focus::placeholder {
+  position: absolute;
+  top: -25px;
+  color: #ffcc1d;
+}
 main .contacto .container-formulario .formulario .inputgroup textarea {
   max-width: 100%;
   min-width: 100%;
@@ -904,14 +910,14 @@ footer .redes-bottom a:hover {
     width: 95%;
   }
   main .contacto .container-formulario .formulario .inputgroup textarea,
-main .contacto .container-formulario .formulario .inputgroup input:not([type=submit]) {
+  main .contacto .container-formulario .formulario .inputgroup input:not([type=submit]) {
     font-size: 1rem;
   }
   main .contacto .container-formulario .formulario .inputgroup .label {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 545px) {
+@media (max-width: 545px) {
   main .hero {
     padding: 1rem 0;
     flex-direction: column;
